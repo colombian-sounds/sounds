@@ -8,32 +8,31 @@ output: html_document
 /* ── Species page — new design ─────────────────────────────── */
 .sp-header { text-align: center; margin-bottom: 2rem; }
 .sp-header img {
-  width: 240px; height: auto;
+  width: 85%; max-width: 480px; height: auto;
   border-radius: 10px;
-  border: 0.5px solid #d0cfc8;
-  display: block; margin: 0 auto 0.9rem;
+  display: block; margin: 0 auto 1rem;
 }
-.sp-header h2 { font-size: 1.45rem; font-weight: 500; margin-bottom: 3px; }
-.sp-header .sp-author { font-size: 0.82rem; color: #888; }
+.sp-header h2 { font-size: 1.6rem; font-weight: 600; margin-bottom: 4px; color: #1a1a1a; }
+.sp-header .sp-author { font-size: 0.95rem; color: #555; }
 
 .sp-section-label {
-  font-size: 0.68rem; font-weight: 600;
-  letter-spacing: 0.07em; text-transform: uppercase;
-  color: #aaa; margin: 2rem 0 0.6rem;
+  font-size: 0.72rem; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: #888; margin: 2rem 0 0.65rem;
 }
 
 /* Tabs */
 .sp-tabs { display: flex; gap: 4px; margin-bottom: 0; }
 .sp-tab-btn {
-  padding: 6px 15px; font-size: 0.82rem;
+  padding: 7px 18px; font-size: 0.9rem;
   cursor: pointer; font-family: inherit;
   border: 0.5px solid #d0cfc8; border-bottom: none;
   border-radius: 6px 6px 0 0;
-  background: #f5f4f0; color: #888;
+  background: #f5f4f0; color: #666;
   transition: background .15s, color .15s;
 }
-.sp-tab-btn:hover { background: #fff; color: #333; }
-.sp-tab-btn.active { background: #fff; color: #222; font-weight: 500; }
+.sp-tab-btn:hover { background: #fff; color: #222; }
+.sp-tab-btn.active { background: #fff; color: #111; font-weight: 600; }
 
 .sp-tab-panel {
   display: none;
@@ -55,24 +54,24 @@ output: html_document
 
 /* Data links */
 .sp-source-label {
-  font-size: 0.75rem; color: #aaa;
-  margin: 0.8rem 0 0.3rem;
+  font-size: 0.8rem; color: #777;
+  margin: 0.8rem 0 0.3rem; font-weight: 600;
 }
 .sp-source-label:first-child { margin-top: 0; }
-.sp-data-link { font-size: 0.85rem; margin-bottom: 4px; }
+.sp-data-link { font-size: 0.95rem; margin-bottom: 5px; }
 .sp-data-link a { color: #2d7dd2; text-decoration: none; }
 .sp-data-link a:hover { text-decoration: underline; }
 
 /* Reference block */
 .sp-ref {
-  font-size: 0.82rem; line-height: 1.65;
-  padding: 0.7rem 1rem;
+  font-size: 0.95rem; line-height: 1.7; color: #222;
+  padding: 0.75rem 1rem;
   background: #f5f4f0;
   border-radius: 6px;
-  border-left: 2px solid #d0cfc8;
+  border-left: 2px solid #bbb;
   margin-bottom: 0.6rem;
 }
-.sp-ref a { color: #2d7dd2; font-size: 0.78rem; }
+.sp-ref a { color: #2d7dd2; font-size: 0.85rem; }
 
 body h1 { display: none; }
 </style>
